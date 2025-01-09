@@ -3,3 +3,5 @@ To make the set of instructions to execute only when certain conditon is true
 
 Used to decide whether to execute the code or skip the code based on certain Conditional
 
+
+if: Only one possible Condition
