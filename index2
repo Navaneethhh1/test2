@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let n = prompt("Enter the number");
+        // switch(true){
+        //     case n == "monday":
+        //         document.write("WeekDay");
+        //         break;
+        //     case n == "tuesday":
+        //         document.write("weekday");
+        //         break;
+        //     case n == "wednesday":
+        //         document.write("Weekday");
+        //         break;
+        // }
+
+
+        // let n = prompt("Enter a number?")
+        // let tc = 0;
+        // for(let i = 1;i<=n;i++){
+        //     if(i<=50){
+        //         tc=tc+2;
+        //     }
+        //     if(i>50 && i<=150){
+        //         tc=tc+3;
+        //     }
+        //     if(i>150 && i<=250){
+        //         tc=tc+5;
+        //     }
+        //     if(i>250){
+        //         tc=tc+8;
+        //     }
+        // }
+        // let tax = tc*0.2;
+        // document.write(tc+tax);
+
+
+        // document.write(charge);
+
+        let n = prompt("Enter the number of students");
+        let total = n*(n-1)/2;
+        document.write(total);
+
+    </script>
+</body>
+</html>
