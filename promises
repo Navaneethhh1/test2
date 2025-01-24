@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let greet = x => console.log(x);
+        greet("Hello");
+
+
+        let age = 19;
+        let welcome = (age<18)? ()=> console.log("Hii"): ()=> console.log("Hello");
+
+        welcome()
+
+
+        console.log("Hey")
+        setTimeout(()=>{
+            console.log("This will take time")
+        },3000);
+
+        console.log("This doesn't take time")
+
+
+        let myPromise = new Promise((resolve , reject)=>{
+            let success = true;
+            if(success){
+                resolve("task completed");
+
+            }
+            else{
+                reject("task rejected");
+            }
+        })
+    </script>
+    
+</body>
+</html>
