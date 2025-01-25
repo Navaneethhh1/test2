@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+
+
+    function mainfunction(callback){
+      console.log("main function started");
+       callback();
+
+    }
+    function callbackfunction(){
+        console.log("Callback Function executed")
+    }
+
+    mainfunction(callbackfunction);
+// Main function takes a parameter callback
+// This callback function is passed as an argument to the main function
+// Inside th emain function the callback function is called
+
+
+// --Output
+// mainfunction(callbackFunction);
+// it will execute the code inside the main function
+// it will print("Executing main function")
+// THen it reaches to callback(); Where it call the function which is passed to mainfunction 
+
+
+
+    function greet(name ,callback){
+        console.log("Hello "+name);
+        callb();
+    }
+
+
+    const callb = function () {
+    console.log("Welcome");
+};
+    
+
+
+    greet("Navaneeth")
+
+    // Anonymous function as a callback function
+
+    // Exp: 
+    // We didn't pass a named function like (goodBye);
+    // Instead of that we defined an anynomous function directly within the greet function
+     
+
+
+    // Asynchronous callback with setTimeout
+
+
+    function fetchData(callback){
+        console.log("Fetching data...")
+        setTimeout(function(){
+            console.log("Data fetched");
+            callback()
+
+        },2000)}
+
+
+    function processData(){
+        console.log("Processing the fetched data...")
+    }
+    fetchData(processData);
+
+
+
+    // Ex5
+    // Using callback with array methods(Map).
+
+    const num = [1,2,3,4,5]
+    const d = num.map(function(n){
+        return n*2
+    })
+    console.log(d)
+
+
+    function registerUser(username , email , callback){
+        console.log("Registering user "+username);
+        setTimeout(function(){
+            console.log("User "+ username + " registered succesfully");
+
+            callback(email);
+        },3000)
+    }
+    function sendEmail(email){
+        console.log("Sending mail to "+ email);
+    };
+
+    registerUser("navaneeth","navaneeth@gmail.com",sendEmail);
+
+    
+  </script>
+</body>
+</html>
