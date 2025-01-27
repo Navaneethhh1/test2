@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let mypromise = new Promise((resolve , reject) =>{
+        let success = true;
+        if(success){
+            resolve("The operation is succesfull ");
+        }
+        else{
+            reject("The operation is failed")
+        }
+    })
+    mypromise.then(result =>{
+        console.log(result);
+    });
+    mypromise.catch(error =>{
+        console.log(error);
+    })
+
+
+    let promise1 = new Promise((resolve,reject) =>{
+            resolve(5);
+        })
+        promise1.then(result =>{
+            document.write(result);
+            return result*2;
+            //return a new value
+        })
+        .then(result =>{
+            document.write(result);
+            return result + 3;
+            //return a new value
+        })
+        .then(result =>{
+            document.write(result);
+        })
+        .catch(error =>{
+            document.write("Error ",error);
+        })
+
+
+        let promise3 = new Promise((resolve , reject)=>{
+              
+        })
+   </script> 
+</body>
+</html>
