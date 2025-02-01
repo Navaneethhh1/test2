@@ -1,0 +1,36 @@
+// let age = prompt("Enter the age");
+// let citizen = prompt("Enter the citizenship");
+// let cTest = prompt("Citizenship result");
+
+// if((age >= 18) && (citizen=="Indian"||cTest =="Passed")){
+//     document.write("Can eligible for voting");
+// }
+// else{
+//     document.write("Cannot vote");
+// }
+
+
+
+let bill = 100;
+let premium = "Yes"
+let discountedBill = 0;
+
+if(bill > 50 && bill <100 && premium!="Yes"){
+    discountedBill = bill*0.1; 
+}
+else if(bill > 50 && bill <100 && premium == "Yes"){
+    discountedBill = bill*0.15;
+}
+else if( bill >= 100  && premium!="Yes"){
+    discountedBill = bill*0.2;
+}
+else if( bill >= 100 && premium == "Yes"){
+    discountedBill = bill*0.25;
+}
+
+document.write(discountedBill);
+
+
+
+
+
